@@ -1,0 +1,47 @@
+@import "./reset.css";
+
+body {
+  background-color: rgb(153, 152, 152);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 400px;
+  background-color: white;
+
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.container {
+  height: 100%;
+}
+
+.screen {
+  height: 30%;
+}
+
+.touchpad {
+}
+
+.buttons button {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border-color: rgb(246, 244, 244);
+  border-width: 0.2px;
+  background-color: transparent;
+  border: medium none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.buttons button:active {
+  box-shadow: rgba(99, 99, 99, 0.15) -1.95px -1.95px 2.6px, rgba(99, 99, 99, 0.15) -1.95px
+    -1.95px 2.6px;
+}
+
+
