@@ -7,30 +7,73 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-family: Manrope;
 }
 
 .wrapper {
-  max-width: 400px;
+  max-width: 300px;
   background-color: white;
-
-  padding: 1rem;
   border-radius: 20px;
 }
 
 .container {
   height: 100%;
+
+  
+  padding: 1rem;
 }
 
-.screen {
-  height: 30%;
+.head {
+  background-color: black;
+  border-radius: 20px 20px 10px 10px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.head>p{
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+.screen{
+    padding: 50px 0 25px 0;
+    margin: .4rem;
+}
+
+.screen p{
+    text-align: right;
+    
+    color: rgb(155, 104, 202);
+    font-weight: 700;
+}
+
+.screen input{
+    text-align: right;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+input:focus{
+    outline: none;
 }
 
 .touchpad {
 }
 
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
 .buttons button {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 5px;
   border-color: rgb(246, 244, 244);
   border-width: 0.2px;
@@ -40,8 +83,6 @@ body {
 }
 
 .buttons button:active {
-  box-shadow: rgba(99, 99, 99, 0.15) -1.95px -1.95px 2.6px, rgba(99, 99, 99, 0.15) -1.95px
-    -1.95px 2.6px;
+  box-shadow: rgba(99, 99, 99, 0.15) -1.95px -1.95px 2.6px,
+    rgba(99, 99, 99, 0.15) -1.95px -1.95px 2.6px;
 }
-
-
