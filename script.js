@@ -1,16 +1,17 @@
 const historyScreen = document.getElementById('history')
+const inputScreen = document.getElementById('input')
 
 document.addEventListener('click', (event) => {
     if(event.target.localName === 'button'){
         if(event.target.innerHTML === 'AC'){
-            clearScreen()
+            clearInputScreen()
         }
         else{
-            historyScreen.innerHTML += event.target.innerHTML
+            inputScreen.textContent += event.target.innerHTML
         }
     }
 })
 
-function clearScreen(){
-    historyScreen.innerHTML = ''
+function clearInputScreen(){
+    inputScreen.innerHTML = ' '
 }

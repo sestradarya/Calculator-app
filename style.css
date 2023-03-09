@@ -18,12 +18,15 @@ body {
   background-color: white;
   border-radius: 20px;
   /* height: 100vh; */
+
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   height: 100%;
 
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .head {
@@ -72,11 +75,11 @@ input:focus {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .buttons button {
-  height: 3.5rem;
+  height: 3rem;
 
   border-radius: 5px;
   border-color: rgb(246, 244, 244);
@@ -111,12 +114,13 @@ input:focus {
   }
   .wrapper {
     min-width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+
   }
   .container {
   }
   .head {
-    height: 25%;
+    height: 35%;
   }
   .touchpad {
     height: 65%;
