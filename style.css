@@ -9,22 +9,20 @@ body {
   align-items: center;
 
   font-family: Manrope;
-
   overflow-y: hidden;
 }
 
 .wrapper {
-  max-width: 300px;
+  width: 300px;
+  height: 580px;
   background-color: white;
   border-radius: 20px;
-  min-height: 380px;
   display: flex;
   flex-direction: column;
 }
 
 .container {
   height: 100%;
-
   padding: 0.7rem;
 }
 
@@ -33,7 +31,6 @@ body {
   border-radius: 20px 20px 10px 10px;
   color: white;
   letter-spacing: 0.0625rem;
-
   font-size: 1.1rem;
 }
 
@@ -60,17 +57,18 @@ body {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
 }
 
 .touchpad {
+  height: 65%;
 }
 
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 22px;
 }
 
 .buttons button {
@@ -135,13 +133,5 @@ body {
   .wrapper {
     min-width: 100%;
     height: 100vh;
-  }
-  .container {
-  }
-  .head {
-    height: 35%;
-  }
-  .touchpad {
-    height: 65%;
   }
 }

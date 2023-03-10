@@ -29,9 +29,9 @@ function deleteLastCharacter() {
 }
 
 function calculatePercent() {
-  const expr = inputScreen.innerHTML;
-  const partialValue = expr.matchAll(/\d+(?=%)/);
-  console.log(partialValue);
+//   const expr = inputScreen.innerHTML;
+//   const partialValue = expr.matchAll(/\d+(?=%)/);
+//   console.log(partialValue);
 }
 
 function getResult() {
