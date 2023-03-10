@@ -14,4 +14,4 @@ document.addEventListener('click', (event) => {
 
 function clearInputScreen(){
     inputScreen.innerHTML = ' '
-}
+}  
