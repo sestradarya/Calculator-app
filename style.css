@@ -146,6 +146,12 @@ body {
     rgba(99, 99, 99, 0.15) -2.95px -2.95px 4.6px;
 }
 
+.dark-theme.wrapper .buttons button:active {
+  box-shadow:
+    rgba(74, 74, 74, 0.2) 2.95px 2.95px 6.6px,
+    rgba(74, 74, 74, 0.2) 2.95px 2.95px 6.6px,
+    rgba(16, 16, 16, 0.8) -2.95px -2.95px 9.6px;
+}
 
 
 /* The switch - the box around the slider */
