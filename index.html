@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper light-theme">
       <div class="head container">
         <p>Calculator</p>
         <div class="screen">
@@ -22,26 +22,29 @@
       </div>
       <div class="touchpad container">
         <div class="buttons">
-          <button class="gray smaller">%</button>
-          <button class="gray smaller">CE</button>
-          <button class="gray smaller">AC</button>
-          <button class="gray">/</button>
+          <label class="switch" id="theme">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+          <button class="smaller" id="gray">CE</button>
+          <button class="smaller" id="gray">AC</button>
+          <button id="gray">/</button>
           <button>7</button>
           <button>8</button>
           <button>9</button>
-          <button class="gray">*</button>
+          <button id="gray">*</button>
           <button>4</button>
           <button>5</button>
           <button>6</button>
-          <button class="gray">-</button>
+          <button id="gray">-</button>
           <button>1</button>
           <button>2</button>
           <button>3</button>
-          <button class="gray">+</button>
+          <button id="gray">+</button>
           <button></button>
           <button>0</button>
-          <button class="gray">.</button>
-          <button class="gray purple">=</button>
+          <button id="gray">.</button>
+          <button id="purple">=</button>
         </div>
       </div>
     </div>

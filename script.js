@@ -7,9 +7,6 @@ document.addEventListener("click", (event) => {
       clearInputScreen();
     } else if (event.target.innerHTML === "CE") {
       deleteLastCharacter();
-    } else if (event.target.innerHTML === "%") {
-      inputScreen.innerHTML += event.target.innerHTML;
-      calculatePercent();
     } else if (event.target.innerHTML === "=") {
       getResult();
     } else {
@@ -28,11 +25,7 @@ function deleteLastCharacter() {
   inputScreen.innerHTML = expr.slice(0, -1);
 }
 
-function calculatePercent() {
-//   const expr = inputScreen.innerHTML;
-//   const partialValue = expr.matchAll(/\d+(?=%)/);
-//   console.log(partialValue);
-}
+
 
 function getResult() {
   try {
@@ -44,3 +37,17 @@ function getResult() {
     
   }
 }
+
+const wrapper = document.querySelector('.wrapper')
+
+function changeTheme(){
+  if (wrapper.classList.contains('light-theme')){
+    wrapper.classList.remove('light-theme')
+    wrapper.classList.add('dark-theme')
+  } else{
+    wrapper.classList.remove('dark-theme')
+    wrapper.classList.add('light-theme')
+  }
+}
+
+document.querySelector('.slider').addEventListener('click', changeTheme)
